@@ -1,0 +1,6 @@
+.mat-card-image {
+  width: calc(23% + 28px);
+  margin: 0 -16px 16px -16px;
+  display: block;
+  overflow: hidden;
+}

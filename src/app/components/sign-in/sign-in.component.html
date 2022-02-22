@@ -1,0 +1,23 @@
+<div class="container">
+<h2 class="text-center mt-4">Inscription</h2>
+   <div class="col-md-12 mt-4">
+        <form [formGroup]="signFormGroup">
+           {{signFormGroup.value|json}}
+           <div class="my-4">
+            <label for="typeahead-basic">nom:</label>
+               <input id="typeahead-basic" type="text" class="form-control" placeholder="nom" formControlName="nom" />
+             </div>
+                <div class="my-4">
+                 <label for="typeahead-basic">Email:</label> 
+                    <input id="typeahead-basic" type="text" class="form-control" placeholder="nom" formControlName="email"/>
+                </div>
+                <div class="my-4">
+                    <label for="typeahead-basic">Mot de passe:</label>
+                    <input id="typeahead-basic" type="text" class="form-control" placeholder="nom" formControlName="mdp"/>
+                    <a routerLink="/connexion">bonjour</a>
+                </div>
+                <button type="button" class="btn btn-primary" (click)="signIn()">Enregistrer</button>
+        </form>
+   
+   </div>
+</div>
